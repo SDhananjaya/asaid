@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/82bcf30e01.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="modify.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div>
+            <img class="img" src="./IMG_20221121_230523.jpg">
+        </div>
+        <div>
+            <button class="btn-btn"
+             onclick="showPrompt()">Click Hear</button>
+             <div class="result" id="result"></div>
+            </div>
+    </div>
+     
+    <div class="container-two">
+        <div title="If you click once, you can't come back"><a href="https://www.youtube.com/">Youtube</a>
+         <p><i class="fa-brands fa-youtube"></i></p>
+        </div>
+        <div title="If you click once, you can't come back"><a href="https://www.instagram.com/">instagram</a>
+            <p><i class="fa-brands fa-instagram"></i></p>
+        </div>
+        <div title="If you click once, you can't come back"><a href="https://www.facebook.com/">Facebook</a>
+            <p><i class="fa-brands fa-facebook"></i></p>
+        </div>
+        <div title="If you click once, you can't come back"><a href="https://www.youtube.com/user/youtube/videos">Videos</a>
+            <p><i class="fa-solid fa-video"></i></p>
+        </div>
+        <div title="If you click once, you can't come back"><a href="https://twitter.com/i/flow/login?redirect_after_login=%2Flogin%3Flang%3Den">Twiter</a>
+        <p><i class="fa-brands fa-twitter"></i></p>
+        </div>
+    </div>
+
+    <h2>Well come!</h2>
+
+
+
+
+    <script>
+        function showPrompt() {
+            var userInput = prompt("Please enter your name:");
+            if (userInput !== null) {
+                var resultElement = document.getElementById("result");
+                resultElement.textContent = "Hello, " + userInput ;
+                resultElement.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
